@@ -26,7 +26,7 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
         with:
-          context: .
+          context: ./nginx-private
           push: true
           # 콜론(:)이 포함된 문자열이므로 따옴표로 감싸주는 것이 안전합니다.
           tags: "${{ secrets.DOCKER_USERNAME }}/nginx-private:latest"
