@@ -9,6 +9,9 @@ app = FastAPI()
 def read_root():
     return {"Hello": "World", "status": "Success"}
 
+@app.get("/api/")
+def read_root():
+    return {"Hello": "Song", "status": "Success"}
 # 3. 경로 파리미터 예시(아이템 조회)
 # @app.get("/items/{item_id}")
 # def read_item(item_id: int, q: str = None):
