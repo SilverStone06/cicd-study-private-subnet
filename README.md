@@ -1,4 +1,4 @@
-# cicd-study-ssm
+# CI/CD Study With SSM
 
 Private EC2(사설 서브넷)에 SSH 대신 AWS SSM으로 배포하는 GitHub Actions 파이프라인 리포지토리입니다. Docker Hub 이미지를 사용합니다.
 
@@ -17,4 +17,5 @@ Private EC2(사설 서브넷)에 SSH 대신 AWS SSM으로 배포하는 GitHub Ac
 ## 주의
 - 워크플로우는 `fastapi-private`, `nginx-private` 디렉터리가 있다고 가정합니다.
 - 현재 리포에는 해당 디렉터리가 없어 빌드 단계가 실패할 수 있습니다.\n
+
 
